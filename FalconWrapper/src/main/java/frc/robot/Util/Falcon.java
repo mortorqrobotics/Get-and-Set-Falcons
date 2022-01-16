@@ -42,7 +42,7 @@ public class Falcon {
         tal.set(ControlMode.Velocity, speed * (600 / 4096));
     }
 
-    private void setPositoin(double position) {
+    private void setPosition(double position) {
                                       // position in degrees
         tal.set(ControlMode.Position, position * (360 / 4096));
     }
