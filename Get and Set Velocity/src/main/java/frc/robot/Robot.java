@@ -58,12 +58,12 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     double setVel = SmartDashboard.getNumber("set velocity", 0.0);
-    setVel *= (2048.0 / 600.0);
+    setVel *= (4096.0 / 600.0);
     if(newVel != setVel) {
       newVel = setVel;
     }
 
     tal.set(ControlMode.Velocity, newVel);
-    SmartDashboard.putNumber("velocity", tal.getSelectedSensorVelocity(0));
+    SmartDashboard.putNumber("velocity", tal.getSelectedSensorVelocity(0) * (600.0 / 4096.0));
   }
 }
