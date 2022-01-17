@@ -33,7 +33,7 @@ public class Falcon {
             setVelocity(value);
         }
         else if(controlMode == ControlMode.Position) {
-            setPositoin(value);
+            setPosition(value);
         }
     }
 
